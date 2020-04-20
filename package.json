@@ -1,0 +1,50 @@
+{
+  "name": "@kne/use-callback-state",
+  "version": "0.1.0",
+  "description": "用于解决useState的setState的回调方法问题",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "umd": "dist/use-callback-state.js",
+  "umd:min": "dist/use-callback-state.min.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start-demo": "cd example&&npm start",
+    "start": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kne-union/use-callback-state.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "form",
+    "validate"
+  ],
+  "author": "linzp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kne-union/use-callback-state/issues"
+  },
+  "homepage": "https://github.com/kne-union/use-callback-state#readme",
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.7"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "babel-preset-react-app": "^9.1.0",
+    "rollup": "^1.27.14",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-terser": "^5.1.3"
+  }
+}
